@@ -1,0 +1,59 @@
+<html>
+
+    <body>
+        <h3>Selamat Datang di Kalkulator Sederhana</h3>
+        <h4>Kalkulator Sederhana</h4>
+        <br><br>
+        <label for="">Angka 1 :</label>
+        <input type="text" id="angka 1">
+        <br>
+        <br>
+
+        <label for="">Angka 2 :</label>
+        <input type="text" id="angka 2">
+        <br>
+        <br>
+
+        <label for="">Hasil : </label>
+        <input type="text" id="hasil">
+        <br>
+        <br>
+
+        <button onclick="ftambah()"> Tambah (+)</button>
+        <button onclick="fkurang()"> Tambah (-)</button>
+        <button onclick="fkali()"> Tambah (*)</button>
+        <button onclick="fbagi()"> Tambah (/)</button>
+
+        <script>
+            var angka1 = document.getElementById("angka 1");
+            var angka2 = document.getElementById("angka 2");
+            var hasil = document.getElementById("hasil");
+
+            function ftambah() {
+                hasil.value = Number(angka1.value) + Number(angka2.value);
+             }
+
+             function fkurang(){
+                hasil.value = Number(angka1.value) - Number(angka2.value);
+             }
+                
+             function fkali(){
+                hasil.value = Number(angka1.value) * Number(angka2.value);
+             }
+
+             function fbagi(){
+                hasil.value = Number(angka1.value) / Number(angka2.value);
+             }
+
+        </script>
+
+
+
+
+
+
+    </body>
+
+
+
+</html>
