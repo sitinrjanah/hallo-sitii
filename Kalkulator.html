@@ -23,6 +23,7 @@
         <button onclick="fkurang()"> Tambah (-)</button>
         <button onclick="fkali()"> Tambah (*)</button>
         <button onclick="fbagi()"> Tambah (/)</button>
+        <button onclick="fsisabagi()"> Tambah (%)</button>
 
         <script>
             var angka1 = document.getElementById("angka 1");
@@ -43,6 +44,10 @@
 
              function fbagi(){
                 hasil.value = Number(angka1.value) / Number(angka2.value);
+             }
+
+             function fsisabagi(){
+                hasil.value = Number(angka1.value) % Number(angka2.value);
              }
 
         </script>
